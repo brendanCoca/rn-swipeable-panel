@@ -57,7 +57,7 @@ interface SwipeablePanelState {
   deviceWidth: number;
   deviceHeight: number;
   panelHeight: number;
-  currentHeight: number; 
+  currentHeight: number;
 }
 
 class SwipeablePanel extends React.Component<
@@ -85,11 +85,7 @@ class SwipeablePanel extends React.Component<
       deviceWidth: FULL_WIDTH,
       deviceHeight: FULL_HEIGHT,
       panelHeight: PANEL_HEIGHT,
-      currentHeight: this.props.smallPanelHeight
-      ? FULL_HEIGHT - this.props.smallPanelHeight
-      : this.state.orientation === 'portrait'
-      ? FULL_HEIGHT - 400
-      : FULL_HEIGHT / 3
+      currentHeight: FULL_HEIGHT / 3
     };
 
     this.pan = new Animated.ValueXY({ x: 0, y: FULL_HEIGHT });
