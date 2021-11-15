@@ -18,9 +18,9 @@ let FULL_WIDTH = Dimensions.get('window').width;
 let PANEL_HEIGHT = FULL_HEIGHT - 100;
 
 export enum STATUS {
-  CLOSED = 1,
-  SMALL = 2,
-  LARGE = 3,
+  CLOSED = 0,
+  SMALL = 1,
+  LARGE = 2,
 }
 
 interface SwipeablePanelProps {
